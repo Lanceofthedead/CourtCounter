@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/court"
+    tools:context="com.lanceofthedead.courtcounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:text="Team A" />
+
+        <TextView
+            android:id="@+id/team_a_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="64dp"
+            android:textStyle="bold"
+            android:textColor="#D30000"
+            android:text="0" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addThreeA"
+            android:padding="4dp"
+            android:text="+3 points"
+            android:textAllCaps="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addTwoA"
+            android:padding="4dp"
+            android:text="+2 points"
+            android:textAllCaps="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addOneA"
+            android:padding="4dp"
+            android:text="+1 point"
+            android:textAllCaps="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="resetButtonA"
+            android:padding="4dp"
+            android:text="RESET"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:text="Team B" />
+
+        <TextView
+            android:id="@+id/team_b_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="64dp"
+            android:textStyle="bold"
+            android:textColor="#D30000"
+            android:text="0" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addThreeB"
+            android:padding="4dp"
+            android:text="+3 points"
+            android:textAllCaps="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addTwoB"
+            android:padding="4dp"
+            android:text="+2 points"
+            android:textAllCaps="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addOneB"
+            android:padding="4dp"
+            android:text="+1 point"
+            android:textAllCaps="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="resetButtonB"
+            android:padding="4dp"
+            android:text="RESET"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+    </LinearLayout>
